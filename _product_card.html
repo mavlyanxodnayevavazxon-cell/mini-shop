@@ -1,0 +1,6 @@
+<div class="card">
+    <h3>{{ p.name }}</h3>
+    <p class="desc">{{ p.description }}</p>
+    <p class="price">{{ p.price | money }}</p>
+    <a href="{{ url_for('product_detail', product_id=p.id) }}" class="btn">Batafsil</a>
+</div>
